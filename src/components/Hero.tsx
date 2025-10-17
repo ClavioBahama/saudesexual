@@ -25,10 +25,10 @@ export const Hero = () => {
           </h1>
 
           <div className="max-w-4xl mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-strong aspect-video bg-card">
+            <div className="relative rounded-2xl overflow-hidden shadow-strong aspect-video md:aspect-video bg-card h-[60vh] md:h-auto">
               <iframe
                 src="https://drive.google.com/file/d/1nq2fxPSEl5a8ZVBm_fsi5AunNGZ3aXYg/preview"
-                className="w-full h-full"
+                className="w-full h-full object-cover"
                 allow="autoplay"
                 allowFullScreen
               ></iframe>
