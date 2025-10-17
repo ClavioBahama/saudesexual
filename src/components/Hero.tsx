@@ -24,17 +24,6 @@ export const Hero = () => {
             <span className="text-accent"> Hoje Ela Me Chama de Leão!</span>
           </h1>
 
-          <div className="max-w-md mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-strong aspect-[9/16] bg-card">
-              <iframe
-                src="https://drive.google.com/file/d/1nq2fxPSEl5a8ZVBm_fsi5AunNGZ3aXYg/preview"
-                className="w-full h-full"
-                allow="autoplay"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-
           <Button 
             size="xl" 
             variant="accent" 
