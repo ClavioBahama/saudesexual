@@ -17,6 +17,7 @@ const plans = [
     ],
     variant: "outline" as const,
     popular: false,
+    link: "https://pay.hotmart.com/H102419252N?checkoutMode=10",
   },
   {
     name: "Completo",
@@ -32,6 +33,7 @@ const plans = [
     ],
     variant: "accent" as const,
     popular: true,
+    link: "https://pay.hotmart.com/H102419252N?off=3vsp1grd&checkoutMode=10",
   },
   {
     name: "Premium",
@@ -47,6 +49,7 @@ const plans = [
     ],
     variant: "premium" as const,
     popular: false,
+    link: "https://pay.hotmart.com/H102419252N?off=cjpijfrn&checkoutMode=10",
   },
 ];
 
@@ -116,8 +119,11 @@ export const Pricing = () => {
                   variant={plan.variant} 
                   size="lg" 
                   className="w-full"
+                  asChild
                 >
-                  Inscrever — Pagar agora
+                  <a href={plan.link} target="_blank" rel="noopener noreferrer">
+                    Inscrever — Pagar agora
+                  </a>
                 </Button>
               </Card>
             ))}
