@@ -1,7 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { CountdownTimer } from "./CountdownTimer";
+import { useState } from "react";
+import { Play } from "lucide-react";
+import videoThumbnail from "@/assets/video-thumbnail.jpeg";
 
 export const Hero = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  
   const scrollToPlans = () => {
     document.getElementById("plans")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -25,9 +30,23 @@ export const Hero = () => {
           </h1>
 
           <div className="max-w-md mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-strong aspect-[9/16] bg-card">
+            <div className="relative rounded-2xl overflow-hidden shadow-strong aspect-[9/16] bg-card group cursor-pointer" onClick={() => setIsPlaying(true)}>
+              {!isPlaying && (
+                <div className="absolute inset-0 z-10 flex items-center justify-center">
+                  <img 
+                    src={videoThumbnail} 
+                    alt="Video thumbnail" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center transition-opacity group-hover:bg-black/40">
+                    <div className="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center shadow-strong transition-transform group-hover:scale-110">
+                      <Play className="w-10 h-10 text-primary ml-1" fill="currentColor" />
+                    </div>
+                  </div>
+                </div>
+              )}
               <iframe
-                src="https://drive.google.com/file/d/1nq2fxPSEl5a8ZVBm_fsi5AunNGZ3aXYg/preview"
+                src={`https://drive.google.com/file/d/1nq2fxPSEl5a8ZVBm_fsi5AunNGZ3aXYg/preview${isPlaying ? '?autoplay=1' : ''}`}
                 className="w-full h-full"
                 allow="autoplay"
                 allowFullScreen
