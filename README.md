@@ -1,3 +1,78 @@
+# Saúde Sexual
+
+Projeto web de educação em saúde sexual (Lovable/React).
+
+**Stack:** React · Vite · TypeScript · Tailwind CSS · Lovable
+
+**Documentação:**
+- [Issue de organização](https://github.com/ClavioBahama/saudesexual/issues/1) — revisão e sugestões
+- Projeto no Lovable: https://lovable.dev/projects/f3fa1496-abf7-422f-a8f5-758eb5fd68de
+
+---
+
+## 0. Pré-requisitos
+
+Node.js 18+ e npm.
+Opcional: Bun (há `bun.lockb`/`bun.lock` no repositório).
+
+## 1. Instalação e Execução
+
+```powershell
+npm install   # instalar dependências
+npm run dev   # servidor de desenvolvimento (Vite)
+npm run build   # build de produção
+npm run preview   # pré-visualizar o build
+npm run lint   # verificar lint
+```
+
+## 2. Estrutura do Projeto
+
+```text
+saudesexual/
+├── src/              # páginas e componentes
+├── public/           # assets
+├── index.html
+├── vite.config.ts
+└── README.md
+```
+
+## 3. Funcionalidades
+
+- Landing/curso sobre performance masculina (título: "Transforme Sua Performance Masculina").
+- Interface React com Tailwind CSS.
+- Projeto editável pelo Lovable.
+
+## 4. Arquivos e pontos de entrada
+
+- `src/` — componentes e páginas.
+- `index.html` — HTML base do Vite.
+
+## 5. Segurança
+
+Variáveis com prefixo `VITE_` são expostas no navegador — nunca coloque segredos nelas.
+Verifique os arquivos `.env` antes de publicar.
+
+## 6. Problemas Comuns
+
+Porta 5173 ocupada: encerre o processo ou altere a porta no `vite.config`.
+Falha ao instalar: apague `node_modules` e o lockfile e rode `npm install` novamente.
+
+## 7. Observações (organização)
+
+> Revisão realizada em 17/11/2026 durante a padronização dos repositórios, inspirada no README do FreelaMZ.
+- README é o template padrão do Lovable.
+- Sugestão: substituir o README pelo conteúdo real do projeto (público-alvo, funcionalidades, deploy).
+
+## 8. Licença
+
+Projeto pessoal/acadêmico. Verifique a licença de templates ou bibliotecas de terceiros antes de uso comercial.
+
+---
+
+## Anexo: README original
+
+> Conteúdo original preservado. As seções acima foram adicionadas na revisão de organização.
+
 # Welcome to your Lovable project
 
 ## Project info
@@ -72,12 +147,3 @@ To connect a domain, navigate to Project > Settings > Domains and click Connect 
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
 
----
-
-## Observações (organização)
-
-> Revisão realizada em 17/11/2026 durante a padronização dos repositórios.
-O conteúdo original deste README foi preservado.
-
-- README é o template padrão do Lovable.
-- Sugestão: substituir o README pelo conteúdo real do projeto (público-alvo, funcionalidades, deploy).
