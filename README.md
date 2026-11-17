@@ -71,3 +71,13 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+---
+
+## Observações (organização)
+
+> Revisão realizada em 17/11/2026 durante a padronização dos repositórios.
+O conteúdo original deste README foi preservado.
+
+- README é o template padrão do Lovable.
+- Sugestão: substituir o README pelo conteúdo real do projeto (público-alvo, funcionalidades, deploy).
